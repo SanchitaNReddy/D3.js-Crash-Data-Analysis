@@ -1,0 +1,125 @@
+#content {
+    border: 2px solid;
+    width: 1450px;
+    height: 800px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  #side-bar {
+    float: left;
+    vertical-align: top;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    width: 300px;
+    height: 800px;
+    padding: 30px 30px 40px 30px;
+    text-align: left;
+    font-size: medium;
+    font-family: sans-serif;
+  }
+
+  #data-source {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    margin-right: 0px;
+    border-top: 2px dotted grey;
+    max-width: 220px;
+    overflow-wrap: break-word;
+    font-size: small;
+  }
+
+  #canvas {
+    margin-left: 300px;
+  }
+
+  .legend-title {
+    font: 10px sans-serif;
+    font-weight: bold;
+  }
+
+  .legend-label {
+    font: 10px sans-serif;
+  }
+
+  .link {
+    fill: none;
+    stroke: #cccccc;
+    stroke-width: 1px;
+  }
+
+  .leaf_node {
+    stroke-width: 2px;
+    stroke: grey;
+    fill: white;
+  }
+
+  .internal_node {
+    stroke-width: 3px;
+    fill: white;
+    stroke: red;
+  }
+
+  /*
+  USE this css rule for the node labels that you will add
+  */
+  .label {
+    font: 12px sans-serif;
+    fill: rgb(0, 0, 0);
+    user-select: none;
+    pointer-events: none;
+    text-align: cener;
+  }
+
+  /*
+  USE these two css rules for the tooltip that you will add
+  */
+  #tooltip-container {
+    position: absolute;
+    background-color: white;
+    padding: 0px 15px 0px 15px;
+    display: none;
+    border: 1px solid #555;
+  }
+
+  #tooltip-text {
+    font: 16px sans-serif;
+    text-align: left;
+  }
+
+  /*
+  USE these four css rules for the highlighting that you will add
+  */
+  .node-highlighted {
+    stroke: black;
+    fill:white;
+    stroke-width: 1;
+  }
+
+  .timeline-bar-highlighted {
+    stroke-width: 13;
+  }
+
+  .timeline-bar-transparent {
+    stroke-opacity: 0.3;
+    fill-opacity: 0.3;
+  }
+
+  .link-highlighted {
+    stroke: orangered;
+    stroke-width: 2px;
+  }
+
+  .notpicked_node {
+    fill: white;
+  }
+
+  .bar-not-highlighted {
+    stroke-width: 8;
+  }
