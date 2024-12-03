@@ -1,0 +1,40 @@
+<!--Reference: https://www.developer.com/design/creating-a-tree-diagram-with-d3-js/ -->
+<!--Reference: https://observablehq.com/@triptych/import-javascript-class-from-github-gist -->
+<!--Reference: https://colorbrewer2.org/ -->
+<!--Reference: https://github.com/yingyangvis -->
+
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="33483086_Sanchita_Reddy.css">
+</head>
+
+<body>
+
+  <div id="content">
+    <div id="side-bar">
+      <h1>Road Accidents</h1>
+      <p>The tree diagram and connecting timeline presents the number of road accidents in the Australian state of Victoria over five years (2018-2022).
+        Accident count is shown per day of the week, over three speed group categories: 50km/ph and under, 60-90km/ph and 100km/ph and over.     
+      </p><p> The visualisation shows a clear difference in counts per category. Each category reports more accidents on 
+        weekdays versus weekends. 50km/ph and under shows a meaningful increase during weekdays. 
+        Each category shows a slight reduction of accidents in 2020. 
+      </p><p> 
+        Hover over a tree node to connect the tree and see detailed information, or the timeline for acccident counts. 
+      </p>
+      <div id="data-source"> Data Source: <a
+        href="https://discover.data.vic.gov.au/dataset/victoria-road-crash-data">Victoria Road Crash Data, </a> All accidents missing speed zone data or containing codes 777, 888, 999 were not categorised.</div>
+    </div>
+    <div id="canvas">
+    </div>
+
+    <div id="tooltip-container">
+      <p id="tooltip-text">Tooltip text goes here.</p>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="33483086_Sanchita_Reddy.js">
+      
+    </script>
+</body>
